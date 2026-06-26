@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>OVERLORD ENGLISH — Luyện thi tiếng Anh vào 10</title>
+<meta name="description" content="Trạm luyện thi tiếng Anh vào 10 THPT — Làm đề thi ngẫu nhiên hoặc luyện theo dạng bài. Thực hiện bởi Huỳnh Hải Đăng, lớp 9A6." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="galaxy-bg"></div>
+  <div id="stars"></div>
+  <div id="starsTwinkle"></div>
+
+  <div class="app">
+
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">🛰️</div>
+        <div>
+          <h1>OVERLORD ENGLISH</h1>
+          <p class="brand-sub">Trạm luyện thi tiếng Anh vào 10 · thực hiện bởi <b>Huỳnh Hải Đăng</b> — lớp 9A6</p>
+        </div>
+      </div>
+      <div class="overall-score" id="overallScore">🌌 Tổng điểm: 0/0</div>
+    </header>
+
+    <nav class="mode-toggle" id="modeToggle">
+      <button class="mode-btn" data-mode="exam">🎯 Làm đề thi</button>
+      <button class="mode-btn" data-mode="practice">📚 Luyện theo dạng bài</button>
+    </nav>
+
+    <!-- ===================== EXAM MODE ===================== -->
+    <section id="examSection">
+      <div class="exam-toolbar">
+        <button class="btn primary" id="btnRestartExam">🎲 Làm đề mới</button>
+        <div class="exam-score" id="examScore">Đã làm: 0/34 câu</div>
+      </div>
+      <div class="starmap" id="examStarmap"></div>
+      <main class="card" id="examCard"></main>
+    </section>
+
+    <!-- ===================== PRACTICE MODE (luyện theo dạng bài) ===================== -->
+    <section id="practiceSection" class="hidden">
+      <nav class="main-tabs" id="mainTabs"></nav>
+      <div class="sub-chips" id="subChips"></div>
+      <div class="starmap" id="starmap"></div>
+      <main class="card" id="card"></main>
+    </section>
+
+    <p class="footer-note">
+      🎯 <b>Làm đề thi</b>: mỗi lần bấm "Làm đề mới" sẽ ra một đề 34 câu khác nhau, không trùng câu, chấm theo thang điểm 10 — giống đề thi thật.<br>
+      📚 <b>Luyện theo dạng bài</b>: tự do chọn từng dạng câu để luyện, có gợi ý và lời giải ngay khi làm.<br>
+      © Huỳnh Hải Đăng — 9A6 · OVERLORD ENGLISH
+    </p>
+
+  </div>
+
+  <script src="data.js"></script>
+  <script src="generators.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
